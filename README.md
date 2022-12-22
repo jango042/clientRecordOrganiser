@@ -13,7 +13,7 @@ The project demonstrates a simple CRUD to manage Customer records, Sensitive dem
 The follow instructions will guide you on how to have a copy of the project up and running on your computer for development and testing purposes.
 
 ## Prerequisites
-- Java 1.8
+- Java 1.8 or later
 
 
 ## Installing

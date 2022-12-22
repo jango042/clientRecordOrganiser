@@ -1,6 +1,7 @@
 package com.jango.customerrecordorganiser.model;
 
 
+import com.jango.customerrecordorganiser.util.EncryptData;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -22,6 +23,7 @@ public class Client extends BaseModel {
   private String address;
   @Convert(converter = EncryptData.class)
   private String email;
+  @Convert(converter = EncryptData.class)
   private String phone;
   @Convert(converter = EncryptData.class)
   private String gender;

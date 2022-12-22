@@ -1,7 +1,8 @@
 package com.jango.customerrecordorganiser.model;
 
 
-import com.jango.customerrecordorganiser.util.EncryptData;
+import com.jango.customerrecordorganiser.config.AesEncryptor;
+import javax.persistence.Column;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -14,24 +15,26 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Client extends BaseModel {
+public class ClientModel  extends BaseModel{
 
   private String clientId;
   private int age;
   private String name;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
   private String address;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
+  @Column(unique = true)
   private String email;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
+  @Column(unique = true)
   private String phone;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
   private String gender;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
   private String maritalStatus;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
   private String occupation;
-  @Convert(converter = EncryptData.class)
+  @Convert(converter = AesEncryptor.class)
   private Double salary;
 
 }

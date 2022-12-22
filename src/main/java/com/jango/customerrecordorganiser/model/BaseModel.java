@@ -1,5 +1,6 @@
 package com.jango.customerrecordorganiser.model;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.time.LocalDateTime;

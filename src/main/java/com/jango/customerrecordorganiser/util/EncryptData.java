@@ -1,6 +1,6 @@
 package com.jango.customerrecordorganiser.util;
 
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class EncryptData implements AttributeConverter<String,String> {

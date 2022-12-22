@@ -2,8 +2,8 @@ package com.jango.customerrecordorganiser.model;
 
 
 import com.jango.customerrecordorganiser.util.EncryptData;
-import jakarta.persistence.Convert;
-import jakarta.persistence.Entity;
+import javax.persistence.Convert;
+import javax.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
